@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mausam ka Ehsas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Musam ka Ehsas -Weather and Recommendations</h1>
+  <form class="form-container" data-searchForm id="searchForm">
+    <input placeholder="Search your City..." data-searchInput>
+    <button class="btn" type="submit">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1890px-Vector_search_icon.svg.png"
+        width="18" height="12" loading="lazy">
+    </button>
+  </form>
+
+  <div class="weather-information sub-container">
+    <!--city and flag-->
+    <div class="name">
+      <p data-cityName></p>
+      <img src="" data-countryIcon>
+    </div>
+    <!--weather desceription -->
+    <p data-weatherDesc></p>
+    <!--weather icon-->
+    <img data-weatherIcon>
+    <!--temperature-->
+    <p data-temp></p>
+    <!--3 cards -parameters-->
+    <div class="parameter-container">
+      <!--card1--->
+      <div class="parameter parameter1">
+
+        <p>Windspeed</p>
+        <p data-windspeed></p>
+      </div>
+      <div class="parameter parameter2">
+
+        <p>humidity</p>
+        <p data-humidity></p>
+      </div>
+      <div class="parameter parameter3">
+
+        <p>Cloud</p>
+        <p data-cloudiness></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="services">
+    <div class="cards">
+      <div class="card1"></div>
+      <a href="#music"><button id="music_btn">Music Recommendations according to Weather</button></a>
+    </div>
+    <div class="cards">
+      <div class="card2"></div>
+      <a href="#food"><button id="food_btn">Food Recommendations according to Weather</button></a>
+      <h4></h4>
+    </div>
+    <div class="cards">
+      <div class="card3"></div>
+      <a href="#movie"><button id="movie_btn">Movies Recommendations according to Weather</button></a>
+
+    </div>
+  </div>
+  <!--music section**/-->
+  <div class="music" id="music">
+    <div class="div1">
+      <div>
+        <h3 class="namee1"></h3>
+      </div>
+      <div>
+        <p class="desc1"></p>
+      </div>
+      <div>
+        <iframe width="400" height="250" video_link1 src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="div2">
+      <div>
+        <h3 class="namee2"></h3>
+      </div>
+      <div>
+        <p class="desc2"></p>
+      </div>
+      <div>
+        <iframe width="400" height="250" video_link2 src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="div3">
+      <div>
+        <h3 class="namee3"></h3>
+      </div>
+      <div>
+        <p class="desc3"></p>
+      </div>
+      <div>
+        <iframe width="400" height="250" video_link3 src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="div4">
+      <div>
+        <h3 class="namee4"></h3>
+      </div>
+      <div>
+        <p class="desc4"></p>
+      </div>
+      <div>
+        <iframe width="400" height="250" video_link4 src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="div5">
+      <div>
+        <h3 class="namee5"></h3>
+      </div>
+      <div>
+        <p class="desc5"></p>
+      </div>
+      <div>
+        <iframe width="400" height="250" video_link5 src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="div6">
+      <div>
+        <h3 class="namee6"></h3>
+      </div>
+      <div>
+        <p class="desc6"></p>
+      </div>
+      <div>
+        <iframe width="400" height="250" video_link6 src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- food section -->
+  <div class="food" id="food">
+    <div class="div1">
+      <div>
+        <h3 class="img_name1"></h3>
+      </div>
+      <div>
+        <p class="img_desc1"></p>
+      </div>
+      <div>
+        <img width="400" height="250" img_link1 src="" title="food image">
+      </div>
+    </div>
+
+    <div class="div2">
+      <div>
+        <h3 class="img_name2"></h3>
+      </div>
+      <div>
+        <p class="img_desc2"></p>
+      </div>
+      <div>
+        <img width="400" height="250" img_link2 src="" title="food image">
+      </div>
+    </div>
+    <div class="div3">
+      <div>
+        <h3 class="img_name3"></h3>
+      </div>
+      <div>
+        <p class="img_desc3"></p>
+      </div>
+      <div>
+        <img width="400" height="250" img_link3 src="" title="food image">
+      </div>
+    </div>
+    <div class="div4">
+      <div>
+        <h3 class="img_name4"></h3>
+      </div>
+      <div>
+        <p class="img_desc4"></p>
+      </div>
+      <div>
+        <img width="400" height="250" img_link4 src="" title="food image">
+      </div>
+    </div>
+    <div class="div5">
+      <div>
+        <h3 class="img_name5"></h3>
+      </div>
+      <div>
+        <p class="img_desc5"></p>
+      </div>
+      <div>
+        <img width="400" height="250" img_link5 src="" title="food image">
+      </div>
+    </div>
+    <div class="div6">
+      <div>
+        <h3 class="img_name6"></h3>
+      </div>
+      <div>
+        <p class="img_desc6"></p>
+      </div>
+      <div>
+        <img width="400" height="250" img_link6 src="" title="food image">
+      </div>
+    </div>
+  </div>
+
+
+  <!--movie section-->
+  <div class="movie" id="movie">
+    <div class="div1">
+      <div>
+        <h3 class="m_namee1"></h3>
+      </div>
+      <div>
+        <p class="m_desc1"></p>
+      </div>
+      <div>
+        <img width="400" height="250" m_video_link1 src="">
+      </div>
+    </div>
+
+    <div class="div2">
+      <div>
+        <h3 class="m_namee2"></h3>
+      </div>
+      <div>
+        <p class="m_desc2"></p>
+      </div>
+      <div>
+        <img width="400" height="250" m_video_link2 src="">
+      </div>
+    </div>
+    <div class="div3">
+      <div>
+        <h3 class="m_namee3"></h3>
+      </div>
+      <div>
+        <p class="m_desc3"></p>
+      </div>
+      <div>
+        <img width="400" height="250" m_video_link3 src="">
+      </div>
+    </div>
+    <div class="div4">
+      <div>
+        <h3 class="m_namee4"></h3>
+      </div>
+      <div>
+        <p class="m_desc4"></p>
+      </div>
+      <div>
+        <img width="400" height="250" m_video_link4 src="">
+      </div>
+    </div>
+    <div class="div5">
+      <div>
+        <h3 class="m_namee5"></h3>
+      </div>
+      <div>
+        <p class="m_desc5"></p>
+      </div>
+      <div>
+        <img width="400" height="250" m_video_link5 src="">
+      </div>
+    </div>
+    <div class="div6">
+      <div>
+        <h3 class="m_namee6"></h3>
+      </div>
+      <div>
+        <p class="m_desc6"></p>
+      </div>
+      <div>
+        <img width="400" height="250" m_video_link6 src="">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

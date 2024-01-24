@@ -1,0 +1,255 @@
+body{
+  
+  background-color: rgba(83, 86, 90, 0.5);
+  background-image: url('https://images.pexels.com/photos/391522/pexels-photo-391522.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: cover;
+}
+h1{
+  text-align:center;
+  color:white;
+}
+a{
+  text-decoration: none;
+}
+/** weather information-container**/
+.sub-container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+   
+    
+  }
+.weather-information{
+    display:none;
+}
+
+  .weather-information.active{
+    display:flex;
+    margin-top:0;
+  }
+  .name{
+    display: flex;
+    align-items:center;
+    gap:0 0.5rem;
+   
+  }
+  .weather-information img{
+      width:90px;
+      height:90px;
+  }
+  
+  
+  .name img{
+     width:30px;
+     height:20px;
+  }
+  .weather-information p{
+    font-size:1.2rem;
+    font-weight: 300;
+  
+  }
+  .name p{
+    font-size:1.8rem;
+    
+   
+  }
+  .weather-information p[data-weatherDesc]{
+    margin-top:-10px;
+    margin-bottom:-10px;
+  }
+
+  
+  .weather-information p[data-temp]{
+    font-size:2.60rem;
+    font-weight: 700;
+    margin-top:-10px;
+  
+  }
+  .parameter-container{
+    display:flex;
+    gap:10px 20px;
+  
+    justify-content: space-between;
+   
+  }
+  .parameter{
+    width:150px;
+    
+    background-color:rgba(255,255,255,0.7);
+    border-radius: 5px;
+    padding:1.7rem;
+    display:flex;
+    flex-direction: column;
+    gap:5px 0;
+   align-content: center;
+   text-align: center;
+  }
+  .parameter img{
+    height:30px;
+    width:50px;
+    
+  }
+  .parameter1{
+    background-image: url('https://images5.alphacoders.com/743/743872.jpg');
+    background-size:cover;
+    color:white;
+  }
+  .parameter2{
+    background-image: url('https://previews.123rf.com/images/feellgood/feellgood1801/feellgood180100237/93629914-natural-background-with-condensation-on-the-windows-high-humidity-textures-of-water-droplets-of-rain.jpg');
+    background-size:cover;
+    color:white;
+  }
+  .parameter3{
+    background-image: url('https://images.all-free-download.com/images/graphiclarge/sunset_cloud_background_192372.jpg');
+    background-size:cover;
+    color:white;
+  }
+  .parameter p:first-of-type{
+      font-size:1.15rem;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  .parameter p:last-of-type{
+      font-size:1rem;
+      font-weight: 200;
+  }
+  /*search form**/
+.form-container{
+    display:flex;
+    justify-content: center;
+}
+  .form-container input{
+    all:unset;
+    width:430px;
+    height:40px;
+    padding:0 20px;
+    
+    background-color:rgba(255,255,255,0.7);
+    border-radius: 10px;
+    margin-top:20px;
+   
+  }
+  .form-container input::placeholder{
+    color:rgba(255,255,255,0.7);
+  
+  }
+  .form-container input:focus{
+    outline: 3px solid rgba(255,255,255,0.7);
+  }
+  .form-container .btn{
+    padding: unset;
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-top:20px;
+    margin-left: 10px;
+    background-color: rgba(152, 167, 185, 0.5);
+   
+  
+  }
+  /**music button**/
+#music_btn{
+  all:unset;
+    display:flex;
+    margin-top:15px;
+    text-align: center;
+    margin-left:8x;
+    font-size:1.2rem;
+    font-weight: 200;
+    
+  }
+
+
+.music{
+   display:none;
+}
+.music.active{
+  display:flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* food button */
+
+.food{
+  display:none;
+}
+.food.active{
+ display:flex;
+ justify-content: space-around;
+ text-align: center;
+ flex-wrap: wrap;
+}
+
+#food_btn{
+ all:unset;
+   display:flex;
+   margin-top:15px;
+   text-align: center;
+   margin-left:8x;
+   font-size:1.2rem;
+   font-weight: 200;
+   
+ }
+
+ 
+/**movie section**/
+#movie_btn{
+  all:unset;
+    display:flex;
+    margin-top:15px;
+    text-align: center;
+    margin-left:8x;
+    font-size:1.2rem;
+    font-weight: 200;
+    
+  }
+.movie{
+  display:none;
+}
+.movie.active{
+ display:flex;
+ justify-content: space-around;
+ text-align: center;
+ flex-wrap: wrap;
+}
+iframe{
+  height:500;
+  width:300;
+}
+/**services**/
+.services{
+  display:none;
+}
+.services.active{
+ 
+  margin:30px;
+  margin-top:50px;
+  display:flex;
+  justify-content: space-around;
+  background-color:rgba(255,255,255,0.7);
+  padding-top:40px;
+  border-radius:20px;
+}
+.card1{
+  height:300px;
+  width:350px;
+  background-image: url('https://www.thomann.de/blog/wp-content/uploads/2023/06/musicweather_header_770x425-1.png');
+  background-size: cover;
+}
+.card2{
+  height:300px;
+  width:350px;
+  background-image: url('https://www.wfla.com/wp-content/uploads/sites/71/2023/05/GettyImages-1365351040.jpg?w=900');
+  background-size: cover;
+}
+.card3{
+  height:300px;
+  width:350px;
+  background-image: url('https://hips.hearstapps.com/hmg-prod/images/lead-image-book-template-01-1-1671039379.jpg?crop=0.503xw:1.00xh;0.250xw,0&resize=640:*');
+  background-size: cover;
+}
